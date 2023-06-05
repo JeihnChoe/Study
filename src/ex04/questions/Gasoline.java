@@ -12,6 +12,6 @@ public class Gasoline {
         Efficiency eff = new Efficiency();
         double answer = eff.efficiency(8.86, 182.736);
 
-        System.out.println(answer);
+        System.out.printf("%.2f", answer);
     }
 }

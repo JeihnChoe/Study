@@ -1,11 +1,11 @@
-package ex05.ch02;
+package ex05.ch99;
 
-public class DarkTemplar extends ProtossUnit {
+public class P_G_DarkTemplar extends ProtossUnit {
     String name;
     int hp;
     int attack;
 
-    public DarkTemplar(String name, int hp, int attack) {
+    public P_G_DarkTemplar(String name, int hp, int attack) {
         this.name = name;
         this.hp = hp;
         this.attack = attack;

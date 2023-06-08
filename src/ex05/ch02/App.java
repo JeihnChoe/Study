@@ -14,34 +14,5 @@ public class App {
         ProtossUnit dr1 = new Dragoon("드라군1", 100, 5);
         ProtossUnit dr2 = new Dragoon("드라군2", 100, 5);
 
-        // 질럿1 -> 질럿2 공격
-        attack(z1, z2);
-        // 질럿1 -> 드라군1 공격
-        attack(z1, dr1);
-        // 질럿1 -> 다크1 공격
-        attack(z1, dt1);
-
-        // 드라군1-> 드라군2 공격
-        attack(dr1, dr2);
-        // 드라군1 -> 질럿1 공격
-        attack(dr1, z1);
-        // 드라군1 -> 다크1 공격
-        attack(dr1, dt1);
-
-        // 다크1 -> 다크2 공격
-        attack(dt1, dt2);
-        // 다크1 -> 질럿1 공격
-        attack(dt1, z1);
-        // 다크1 -> 드라군1 공격
-        attack(dt1, dr1);
-
-        // 오버로딩 체험하기 : Ctrl 클릭해서 누르면 안에 다른 메소드가 있음.
-        System.out.println();
-        System.out.println(1);
-        System.out.println(1.1);
-        System.out.println('문');
-        System.out.println("문자열");
-        System.out.println(true);
-
     }
 }

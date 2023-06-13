@@ -13,7 +13,7 @@ public class App {
         ProtossUnit d1 = new Dragoon("드라군1", 80, 30);
         ProtossUnit dk1 = new DarkTemplar("닥템1", 60, 40);
 
-        attack(z1, d1);
+        attack(new Zealot("질럿1", 100, 10), d1);
         attack(d1, dk1);
         attack(z1, d1);
     }

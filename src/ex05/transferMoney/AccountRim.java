@@ -5,7 +5,6 @@ public class AccountRim extends Account {
     String bankerName;
     String numAccount;
     int balance;
-    int depositWithdrawMoney;
 
     public String getBankerName() {
         return bankerName;
@@ -31,19 +30,11 @@ public class AccountRim extends Account {
         this.balance = balance;
     }
 
-    public int getDepositWithdrawMoney() {
-        return depositWithdrawMoney;
-    }
-
-    public void setDepositWithdrawMoney(int depositWithdrawMoney) {
-        this.depositWithdrawMoney = depositWithdrawMoney;
-    }
-
-    public AccountRim(String bankerName, String numAccount, int balance, int depositWithdrawMoney) {
+    public AccountRim(String bankerName, String numAccount, int balance) {
         this.bankerName = bankerName;
         this.numAccount = numAccount;
         this.balance = balance;
-        this.depositWithdrawMoney = depositWithdrawMoney;
+
     }
 
 }

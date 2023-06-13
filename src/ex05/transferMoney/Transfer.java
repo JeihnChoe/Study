@@ -28,8 +28,8 @@ public class Transfer {
     }
 
     public static void main(String[] args) {
-        Account h1 = new AccountHong("홍길동", "110-218-667734", 10000, 500);
-        Account r1 = new AccountRim("임꺽정", "66550-47487-112", 3500, 0);
+        Account h1 = new AccountHong("홍길동", "110-218-667734", 10000);
+        Account r1 = new AccountRim("임꺽정", "66550-47487-112", 3500);
 
         Scanner sc = new Scanner(System.in);
         System.out.println("하실 업무를 선택하세요.");
@@ -42,12 +42,14 @@ public class Transfer {
         System.out.println("금액을 입력하세요");
         int amount = sc.nextInt();
 
-        if (input == "입금" && bankername == "홍길동")
+        if (input.equals("입금") && bankername.equals("홍길동"))
             deposit(h1);
-        if (input == "출금" && bankername == "홍길동")
+        if (input.equals("출금") && bankername.equals("홍길동"))
             withdraw(h1);
-        if (input == "송금" && bankername == "홍길동")
+        if (input.equals("송금") && bankername.equals("홍길동"))
             deposit(h1);
 
     }
 }
+
+// 입력받은 변수를 메서드안에 넣어야함.
